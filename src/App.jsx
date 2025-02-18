@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Asegúrate de importar Route y Routes
 import Juego from './views/Juego';
 import Instrucciones from './views/Instruc';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {
