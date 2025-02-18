@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {
   return (
-    <Router> 
+    <Router> {/* Todo el contenido debe ir dentro del Router */}
       <div className="App">
         <Routes> {/* Routes asegura que solo se renderice una ruta a la vez */}
           <Route path="/" element={<Instrucciones />} /> 
