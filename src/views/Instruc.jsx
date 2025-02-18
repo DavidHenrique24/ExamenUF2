@@ -16,7 +16,7 @@ const Instrucciones = () => {
             <li>Cinco fantasmas posicionados aleatoriamente en la cuadrícula.</li>
             <li>El jugador puede mover al Comecocos utilizando las flechas del teclado.</li>
           </ul>
-          <Link to="/instrucciones">
+          <Link to="/juego">
             <button className="btn btn-success fs-1 mt-5">JUGAR</button>
           </Link>
           <hr />
