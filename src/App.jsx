@@ -1,12 +1,19 @@
-import './App.css'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Asegúrate de importar Route y Routes
+import Juego from './views/Juego';
+import Instrucciones from './views/Instruc';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-function App() {
-
+const App = () => {
   return (
-    <>
-      <h1>Examen UF2 David Henrique</h1>
-    </>
-  )
-}
+    <Router> 
+      <div className="App">
+        <Routes> {/* Routes asegura que solo se renderice una ruta a la vez */}
+          <Route path="/" element={<Instrucciones />} /> 
+          <Route path="/juego" element={<Juego />} /> 
+        </Routes>
+      </div>
+    </Router>
+  );
+};
 
-export default App
+export default App;
