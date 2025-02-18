@@ -4,8 +4,6 @@ export function colorPieza(numero) {
       "bg-secondary",
       "fas fa-circle",
       "fas fa-ghost",
-
     ];
-
       return(colores[numero])
 }
