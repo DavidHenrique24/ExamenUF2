@@ -5,10 +5,11 @@ import { modelos } from "../lib/modelos";
 const Juego = () => {
 
   const [posicionComecocos, setPosicionComecocos] = useState({ x: 10, y: 10 });//Usa el usestate para poner el comecocos en medio para que comienze en esa posicion
+  const [fantasmas, setFantasmas] = useState([]); // Estado para los fantasmas
 
-  // Función que maneja el movimiento del Comecocos
+  // Funcion que maneja el movimiento del Comecocos
   const moverComecocos = (evento) => {
-    let nuevaPosicion = { ...posicionComecocos };
+    let nuevaPosicion = { ...posicionComecocos }; //creo un copia 
 
     switch (evento.key) {
       case "ArrowUp":
