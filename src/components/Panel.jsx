@@ -1,6 +1,7 @@
 import React from "react";
 import { colorPieza } from "../lib/colores";
 
+
 const Panel = ({ arrayCasillas, posicionComecocos }) => {
   return (
     <div className="panel mt-5">
